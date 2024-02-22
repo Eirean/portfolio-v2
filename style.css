@@ -1,3 +1,20 @@
+/* TABLE OF CONTENTS
+
+    #VARIABLES
+    #GLOBALS
+    #HEADER
+        #LOGO
+        #SITE NAV
+    #MAIN
+        #CONTAINER
+        #GRID
+        #SECTIONS
+    #FOOTER
+
+    #PROJECT LIST
+
+*/
+
 /* VARIABLES */
 html {
     --color-body: #ffffff;
@@ -50,6 +67,24 @@ img {
     padding: var(--space-unit)
 }
 
+/* MAIN */
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    background-color: pink;
+    margin: 0 auto;
+}
+
+/* GRID */
+
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+    }
+}
+
 /* HERO */
 
 .hero-text {
@@ -71,7 +106,7 @@ img {
 }
 
 .hero-text p {
-    color: chartreuse;
+    color: rgb(92, 92, 92);
     font-family: arno-pro, serif;
     font-style: normal;
     font-size: 3vw;
@@ -118,12 +153,33 @@ img {
     }
 }
 
+/* BODY */
+
+.body-text {
+    padding: var(--space-unit);
+}
+
+
+
 /* FOOTER */
 
 .site-footer {
+    display: flex;
+    justify-content: space-between;
     background-color: black;
     padding: 3em var(--space-unit);
     color: aliceblue;
+}
+
+.site-footer h1 {
+    padding: 1em;
+    font-size: 2vw;
+}
+
+.site-footer ul {
+    padding: 1em;
+    font-size: 1vw;
+
 }
 
 /* PROJECT LIST */
