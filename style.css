@@ -5,9 +5,11 @@
     #HEADER
         #LOGO
         #SITE NAV
+        #HELPERS
     #MAIN
         #CONTAINER
         #GRID
+        #HERO
         #SECTIONS
     #FOOTER
 
@@ -27,6 +29,13 @@ body {
     background-color: var(--color-body);
     margin: 0;
 }
+
+/* HELPERS */
+
+.big-space-above {
+    margin-top: 200px;
+}
+
 
 
 /* GLOBAL MEDIA */
@@ -69,21 +78,43 @@ img {
 
 /* MAIN */
 
+.site-main {
+    padding-bottom: 200px;
+}
+
 /* CONTAINER */
 
 .container {
     max-width: 1200px;
-    background-color: pink;
+    /* background-color: pink; */
     margin: 0 auto;
+    padding: 3em;
 }
 
 /* GRID */
 
 @media (min-width: 768px) {
     .row {
+        --gridgap: 4em;
         display: flex;
+        gap: var(--gridgap);
+    }
+
+    .row.swapped {
+        flex-direction: row-reverse;
+    }
+
+    .row>.one-third {
+        width: calc(33.3333% - (var(--gridgap) / 1.5));
+    }
+
+    .row>.two-thirds {
+        width: calc(66.6666% - (var(--gridgap) / 3));
     }
 }
+
+
+
 
 /* HERO */
 
@@ -223,4 +254,24 @@ img {
     grid-column-end: 7;
     grid-row-start: 5;
     grid-row-end: 8;
+}
+
+/* MAGAZINE PAGE */
+
+.magazine h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.magazine p {
+    display: flex;
+    justify-content: right;
+    font-family: arno-pro, serif;
+    font-weight: 500;
+    font-style: normal;
+
 }
