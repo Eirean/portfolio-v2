@@ -281,3 +281,12 @@ img {
     font-style: normal;
 
 }
+
+/* CRETE PAGE */
+
+.page-crete .hero-text {
+    background-image: url(images/crete_colour_hero.jpg);
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 3 / 1;
+}
