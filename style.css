@@ -50,6 +50,7 @@ img {
 .site-header {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(223, 93, 46);
 }
 
 /* LOGO */
@@ -270,6 +271,14 @@ img {
     grid-row-end: 11;
 }
 
+.project-list li:nth-child(5) {
+    /* border: 10px solid red; */
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 11;
+    grid-row-end: 14;
+}
+
 /* MAGAZINE PAGE */
 
 .magazine h3 {
@@ -297,4 +306,22 @@ img {
     background-size: cover;
     background-position: center;
     aspect-ratio: 3 / 1;
+}
+
+/* ALCOHOL PAGE */
+
+.page-alcohol .hero-text {
+    background-image: url(images/propaganda_sign_gold.jpg);
+    background-size: cover;
+    background-position: right;
+    aspect-ratio: 3 / 2;
+}
+
+/* FLAG PAGE */
+
+.page-flag .hero-text {
+    background-image: url(images/rooster_head.jpg);
+    background-size: cover;
+    background-position: right;
+
 }
