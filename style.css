@@ -67,7 +67,9 @@ img {
     margin: 0;
     position: relative;
     list-style: none;
-    font-family: 'raleway';
+    font-family: "le-havre-rounded", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .site-nav ul {
@@ -130,7 +132,9 @@ img {
 }
 
 .hero-text h1 {
-    font-family: "raleway";
+    font-family: "ofelia-display", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 5vw;
     margin-bottom: 0;
     opacity: 0;
@@ -145,7 +149,8 @@ img {
 
 .hero-text p {
     color: rgb(92, 92, 92);
-    font-family: 'arno-pro', serif;
+    font-family: "garamond-premier-pro", serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 3vw;
 }
@@ -227,6 +232,7 @@ img {
     margin: 0;
     padding: 0;
     list-style: none;
+    position: relative;
 }
 
 .project-list {
@@ -235,8 +241,26 @@ img {
     grid-template-columns: repeat(12, 12fr);
 }
 
+.project-list li span {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, -150%);
+    z-index: -1;
+    transition: all .4s ease-out;
+}
+
+.project-list li:hover span {
+    transform: translate(0, 0);
+}
+
 .project-list img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-list li:nth-child(1) {
@@ -314,14 +338,14 @@ img {
     background-image: url(images/propaganda_sign_gold.jpg);
     background-size: cover;
     background-position: right;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 16 / 5;
 }
 
 /* FLAG PAGE */
 
 .page-flag .hero-text {
-    background-image: url(images/rooster_head.jpg);
+    background-image: url(images/rooster_head_hero.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: center center;
 
 }
