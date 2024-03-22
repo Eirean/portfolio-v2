@@ -67,7 +67,7 @@ img {
     margin: 0;
     position: relative;
     list-style: none;
-    font-family: "le-havre-rounded", sans-serif;
+    font-family: "garamond-premier-pro", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -335,7 +335,7 @@ img {
 /* ALCOHOL PAGE */
 
 .page-alcohol .hero-text {
-    background-image: url(images/propaganda_sign_gold.jpg);
+    background-image: url(images/propaganda_sign_gold_mk2.jpg);
     background-size: cover;
     background-position: right;
     aspect-ratio: 16 / 5;
