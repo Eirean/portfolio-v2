@@ -57,7 +57,7 @@ img {
 
 .site-logo {
     padding: var(--space-unit);
-    font-family: 'raleway';
+    font-family: "ofelia-display", sans-serif;
 }
 
 /* SITE NAV */
