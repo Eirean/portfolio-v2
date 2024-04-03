@@ -30,6 +30,17 @@ body {
     margin: 0;
 }
 
+/* GLOBAL LINKS */
+
+a {
+    color: rgb(0 0 0 /.8);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
 /* HELPERS */
 
 .big-space-above {
@@ -50,7 +61,7 @@ img {
 .site-header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(223, 93, 46);
+    /* background-color: rgb(223, 93, 46); */
 }
 
 /* LOGO */
@@ -88,8 +99,6 @@ img {
 .site-main {
     padding-bottom: 200px;
 }
-
-
 
 /* CONTAINER */
 
@@ -235,79 +244,100 @@ img {
     position: relative;
 }
 
-.project-list {
-    padding: var(--space-unit);
-    display: grid;
-    grid-template-columns: repeat(12, 12fr);
+.project-list li {
+    margin-bottom: 2em;
+    padding: 1em;
 }
 
 .project-list li span {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    font-family: "ofelia-display", sans-serif;
     text-align: center;
-    transform: translate(0, -150%);
-    z-index: -1;
-    transition: all .4s ease-out;
-}
-
-.project-list li:hover span {
-    transform: translate(0, 0);
+    display: block;
+    padding-bottom: 1em;
 }
 
 .project-list img {
-    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
-.project-list li:nth-child(1) {
-    /* border: 10px solid red; */
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
+@media (min-width: 768px) {
 
-.project-list li:nth-child(2) {
-    /* border: 10px solid red; */
-    grid-column-start: 9;
-    grid-column-end: 12;
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
 
-.project-list li:nth-child(3) {
-    /* border: 10px solid red; */
-    grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 8;
-}
 
-.project-list li:nth-child(4) {
-    /* border: 10px solid red; */
-    grid-column-start: 7;
-    grid-column-end: 10;
-    grid-row-start: 8;
-    grid-row-end: 11;
-}
+    .project-list {
+        padding: var(--space-unit);
+        display: grid;
+        grid-template-columns: repeat(12, 12fr);
+    }
 
-.project-list li:nth-child(5) {
-    /* border: 10px solid red; */
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 11;
-    grid-row-end: 14;
+    .project-list li span {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+
+        transform: translate(0, -150%);
+        z-index: -1;
+        transition: all .4s ease-out;
+        padding-top: .5em;
+    }
+
+    .project-list li:hover span {
+        transform: translate(0, 0);
+    }
+
+    .project-list img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-list li:nth-child(1) {
+        /* border: 10px solid red; */
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .project-list li:nth-child(2) {
+        /* border: 10px solid red; */
+        grid-column-start: 9;
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    .project-list li:nth-child(3) {
+        /* border: 10px solid red; */
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 8;
+    }
+
+    .project-list li:nth-child(4) {
+        /* border: 10px solid red; */
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 8;
+        grid-row-end: 11;
+    }
+
+    .project-list li:nth-child(5) {
+        /* border: 10px solid red; */
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 11;
+        grid-row-end: 14;
+    }
 }
 
 /* MAGAZINE PAGE */
 
 .magazine h3 {
-    display: flex;
-    justify-content: center;
     font-size: 2vw;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -347,5 +377,9 @@ img {
     background-image: url(images/rooster_head_hero.jpg);
     background-size: cover;
     background-position: center center;
+    color: #ffffff;
+}
 
+.page-flag .hero-text p {
+    color: rgba(241, 217, 184, 0.61);
 }
